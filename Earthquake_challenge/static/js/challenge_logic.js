@@ -206,7 +206,7 @@ for (var i = 0; i < magnitudes.length; i++) {
   // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
   d3.json('https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json').then(function(data) {
     L.geoJSON(data, {
-      style: {color: 'Pink', weight:2}
+      style: {color: 'blue', weight:2}
   }).addTo(tectonicPlates)
 });
 tectonicPlates.addTo(map);
